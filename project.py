@@ -15,9 +15,11 @@ loader5 = PyPDFLoader("./file5.pdf")
 index = VectorstoreIndexCreator().from_loaders(
     [loader1, loader2, loader3, loader4, loader5])
 
-query = "What are the contradictions in Adi Ruppin's testimony?"
-print(index.query(query))
-query = "What are the contradictions in Adi Ruppin's statements?"
-print(index.query(query))
-query = "What are the main issues Elad Rave has raised?"
-print(index.query(query))
+print(loader1.load())
+
+# query = "What are the contradictions in Adi Ruppin's testimony?"
+# print(index.query(query))
+# query = "What are the contradictions in Adi Ruppin's statements?"
+# print(index.query(query))
+# query = "What are the main issues Elad Rave has raised?"
+# print(index.query(query))
